@@ -8,7 +8,7 @@ def join_nested_strings(src)
     index2 = 0
     while index2 < src[index1].count do
       current_val = src[index1][index2]
-      if current_val.kind_of? String
+      if current_val.is_a? String
         output = output + current_val
       end
       index2 += 1
